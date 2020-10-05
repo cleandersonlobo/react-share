@@ -10,7 +10,7 @@ function whatsappLink(url: string, { title, separator }: { title?: string; separ
   assert(url, 'whatsapp.url');
   return (
     'https://' +
-    (isMobileOrTablet() ? 'api' : 'web') +
+    (isMobileOrTablet() ? 'api' : 'api') +
     '.whatsapp.com/send' +
     objectToGetParams({
       text: title ? title + separator + url : url,
